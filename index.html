@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <title>Formulário de Cadastro</title>
+    <title>Add copyright symbol</title>
+</head>
+<body>
+    <div class="field">
+        <h1 id="title">Cadastro de Desenvolvedores</h1>
+        <p id="subtitle">Preencha os campos abaixo</p>
+        <br>
+    </div>
+
+    <form id="formDev">
+        <fieldset class="group">
+            <div class="field">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome"  id="nome" required>
+            </div>
+            <div class="field">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome"required>
+            </div class="field">
+            <div class="field">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email"required>
+            </div>
+        </fieldset>
+
+        
+
+        <div class="field">
+            <label><strong>Selecione sua especialização Dev</strong></label>
+            <label>
+                <input type="radio" name="devweb" value="frontend">Front-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="backend">Back-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="fullsteck">Full-Stack
+            </label>
+        </div>
+
+        <div class="field">
+            <label for="nivel"><strong>Nível de Conhecimento</strong></label>
+            <select id="nivel">
+                <option selected disable value="">Selecione</option>
+                <option>Júnior</option>
+                <option>Pleno</option>
+                <option>Senior</option>
+            </select>
+        </div>
+
+        <fieldset class="group">
+            <div class="check">
+                <label><strong>Selecione suas áreas de conhecimento</strong></label><br><br>
+                <input type="checkbox" id="area1" name="area1" value="HTML">
+                <label for="area1">HTML</label>
+                <input type="checkbox" id="area2" name="area2" value="CSS">
+                <label for="area2">CSS</label>
+                <input type="checkbox" id="area3" name="area3" value="JavaScript">
+                <label for="area3">JavaScript</label>
+                <input type="checkbox" id="area4" name="area4" value="PHP">
+                <label for="area4">PHP</label>
+                <input type="checkbox" id="area5" name="area5" value="C#">
+                <label for="area5">HTML</label>
+                <input type="checkbox" id="area6" name="area6" value="Python">
+                <label for="area6">Python</label>
+                <input type="checkbox" id="area7" name="area7" value="Java">
+                <label for="area7">Java</label>
+            </div>
+        </fieldset>
+
+        <div class="field">
+            <br>
+            <label>Conte mais sobre você:</label>
+            <textarea row="6" style="width: 26em" id="sobre" name="sobre"></textarea>
+        </div>
+    </form>
+    <button form="formDev" class="button" type="submit">Enviar</button>
+</body>
+</html>
